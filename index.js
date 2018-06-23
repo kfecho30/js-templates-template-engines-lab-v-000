@@ -7,7 +7,7 @@ function createPost() {
 
   //create template string - THIS IS THE ONLY LINE WE HAVE TO CHANGE
   //var commentTemplate = '<div class="comment"><p><%= comment %></p><p>Posted By: <span class="commenter"><%= commenter %></span></p></div>';
-  var postTemplate = document.getElementById("comment-template").innerHTML;
+  var postTemplate = document.getElementById("post-template").innerHTML;
 
   //create template function
   var templateFn = _.template(postTemplate);
@@ -18,5 +18,5 @@ function createPost() {
   var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
 
   //append rather than replace!
-  commentsDiv.innerHTML += templateHTML;
+  postsDiv.innerHTML += templateHTML;
 }
