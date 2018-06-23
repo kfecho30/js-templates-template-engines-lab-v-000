@@ -12,4 +12,6 @@ function createPost() {
 
 function createComment() {
   const commentTemplate = _.tempalte(document.getElementbyId('comment-template').innerHTML);
+  const comment = document.getElementById('comment').value;
+  const commenter = document.getElementById('commenter').value;
 }
