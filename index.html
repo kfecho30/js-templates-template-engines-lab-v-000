@@ -12,17 +12,11 @@
             </header>
             <footer>
             </footer>
-            <script id="new-post-template" type="text/x-lodash-template">
-              <div class="post">
-                <div id="new-post-body"><%- comment %></div>
-                <div id="new-post-author">
-                  <p>
-                    <span class="posted-by">Posted By: </span>
-                    <%- commenter %>
-                  </p>
-                </div>
-              </div>
-            </script>
+            <form id="newPost" onSubmit="createPost()">
+              Post Body: <input type="text" id="postBody"><br>
+              Post Author: <input type="text" id="postAuthor"><br>
+              <input type="submit">
+            </form>
           </article>
           <div id='comments-template'>
             <div id='comment-template'>
