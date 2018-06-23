@@ -4,6 +4,6 @@ function createPost() {
   var postTemplate = document.getElementById("post-template").innerHTML;
   var templateFn = _.template(postTemplate);
   var postsDiv = document.getElementById("posts");
-  var templateHTML = templateFn({ 'postBody': postBody, 'author': author });
+  var templateHTML = templateFn({ 'postBody': postBody, 'postAuthor': postAuthor });
   postsDiv.innerHTML += templateHTML;
 }
