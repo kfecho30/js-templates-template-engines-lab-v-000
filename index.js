@@ -8,4 +8,6 @@ function createPost() {
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
   const blogSection = postTemplate({ 'title': postTitle, 'body': postBody, 'poster': postAuthor });
+
+  const postElement = document.getElementById("post");
 }
