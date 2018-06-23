@@ -18,5 +18,4 @@ function createComment() {
   const commentSection = commentTemplate({'comment': comment, 'commenter': commenter});
   const commentElement = document.getElementById('comments')
   commentElement.innerHTML += commentSection;
-
 }
