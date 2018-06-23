@@ -12,6 +12,17 @@
             </header>
             <footer>
             </footer>
+            <script id="new-post-template" type="text/x-lodash-template">
+              <div class="post">
+                <div id="new-post-body"><%- comment %></div>
+                <div id="new-post-author">
+                  <p>
+                    <span class="posted-by">Posted By: </span>
+                    <%- commenter %>
+                  </p>
+                </div>
+              </div>
+            </script>
           </article>
           <div id='comments-template'>
             <div id='comment-template'>
