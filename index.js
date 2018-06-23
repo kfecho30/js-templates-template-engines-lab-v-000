@@ -11,7 +11,10 @@ function createPost() {
 }
 
 function createComment() {
-  const commentTemplate = _.tempalte(document.getElementbyId('comment-template').innerHTML);
+  const commentTemplate = _.template(document.getElementbyId('comment-template').innerHTML);
   const comment = document.getElementById('comment').value;
   const commenter = document.getElementById('commenter').value;
+
+  const commentSection = commentTemplate({'comment': comment, 'commenter': commenter});
+
 }
