@@ -14,16 +14,6 @@
           </form>
         </div>
       </main>
-          <div id='comments-template'>
-            <div id='comment-template'>
-            </div>
-            <footer id='comment-author'>
-            </footer>
-          </div>
-        </div>
-        <div id='sidebar'>
-        </div>
-      </div>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
@@ -34,15 +24,15 @@
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
     <script id="post-template" type="text/x-lodash-template">
-      <div class="post">
-        <div class="post-body"><%- post %></div>
-        <footer class="author">
-          <p>
-            <span class="posted-by">Posted By: </span>
-            <%- author %>
-          </p>
-        </footer>
-      </div>
+      <article>
+        <header><h2><%- title %></h2><header>
+        <p><%- body %></p>
+        <footer>Posted by: <%- poster %></footer>
+      </article>
+    </script>
+    <script id="page-template" type="text/x-lodash-template">
+      <div id="sidebar"></div>
+      <div id="post"></div>
     </script>
 
   </body>
