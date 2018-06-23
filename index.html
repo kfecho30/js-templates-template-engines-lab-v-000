@@ -7,7 +7,7 @@
     <main>
       <div id='page-template'>
         <div id='post-template'>
-          <article id='posts'>
+          <article>
             <header>
             </header>
             <footer>
@@ -38,5 +38,17 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="test/index-test.js"></script>
+    <script id="post-template" type="text/x-lodash-template">
+      <div class="post">
+        <div class="post-body"><%- post %></div>
+        <div class="author">
+          <p>
+            <span class="posted-by">Posted By: </span>
+            <%- author %>
+          </p>
+        </div>
+      </div>
+    </script>
+
   </body>
 </html>
