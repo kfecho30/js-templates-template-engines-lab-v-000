@@ -4,8 +4,8 @@ function createPost() {
   const postTitle = document.getElementById('postTitle').value;
   const postBody = document.getElementById('postBody').value;
   const postAuthor = document.getElementById("postAuthor").value;
-  var templateFn = _.template(postTemplate);
-  var postsDiv = document.getElementById("posts");
-  var templateHTML = templateFn({ 'postBody': postBody, 'postAuthor': postAuthor });
-  postsDiv.innerHTML += templateHTML;
+
+  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
+
+  const blogSection = postTemplate({ 'title': postTitle, 'body': postBody, 'poster': postAuthor });
 }
