@@ -1,5 +1,5 @@
 function createPost() {
-  const postTemplate = _.template(document.getElementById("post-template").innerHTML);;
+  const postTemplate = _.template(document.getElementById("post-template").innerHTML);
   const postTitle = document.getElementById('postTitle').value;
   const postBody = document.getElementById('postBody').value;
   const postAuthor = document.getElementById("postAuthor").value;
@@ -8,4 +8,8 @@ function createPost() {
 
   const postElement = document.getElementById("post");
   postElement.innerHTML += blogSection;
+}
+
+function createComment() {
+  const commentTemplate = _.tempalte(document.getElementbyId('comment-template').innerHTML);
 }
