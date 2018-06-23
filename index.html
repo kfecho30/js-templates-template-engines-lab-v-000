@@ -10,8 +10,14 @@
         <div id="post">
         </div>
         <div id='comment'>
+          <form id="newComment" onSubmit="createComment();return false;">
+            Comment: <input type="text" id='comment'><br>
+            Name: <input type="text" id="commenter"><br>
+            <input type="submit">
+          </form>
         </div>
-      </div><br><br>
+      </div>
+      <br><br>
       <hr>
       <form id="newPost" onSubmit="createPost();return false;">
         Post Title: <input type='text' id="postTitle"><br>
