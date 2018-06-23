@@ -7,5 +7,5 @@ function createPost() {
   const blogSection = postTemplate({ 'title': postTitle, 'body': postBody, 'poster': postAuthor });
 
   const postElement = document.getElementById("post");
-  postElement.innerHTML = blogSection;
+  postElement.innerHTML += blogSection;
 }
