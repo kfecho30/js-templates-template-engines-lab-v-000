@@ -12,10 +12,10 @@ function createPost() {
   //create template function
   var templateFn = _.template(postTemplate);
 
-  var postsDiv = document.getElementById("post-template");
+  var postsDiv = document.getElementById("posts");
 
   //execute template function with JSON object for the interpolated values
-  var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
+  var templateHTML = templateFn({ 'postBody': postBody, 'author': author });
 
   //append rather than replace!
   postsDiv.innerHTML += templateHTML;
